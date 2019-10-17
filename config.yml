@@ -1,0 +1,168 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: yes
+configure_sudoers: no
+configure_terminal: no
+configure_osx: yes
+
+dotfiles_repo: https://github.com/billmoritz/dotfiles.git
+dotfiles_repo_accept_hostkey: yes
+dotfiles_repo_local_destination: ~/dotfiles
+dotfiles_files:
+  - .curlrc
+  - .functions
+  - .gemrc
+  - .gitignore_global
+  - .hushlogin
+  - .osx
+  - .screenrc
+  - .vimrc
+  - .zshrc
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - antigen
+  - aspell
+  - autoconf
+  - awscli
+  - bash-completion
+  - certbot
+  - coreutils
+  - cowsay
+  - doxygen
+  - dialog
+  - direnv
+  - fortune
+  - gettext
+  - git
+  - git-flow-avh
+  - go
+  - gpg
+  - httpie
+  - htop
+  - heroku/brew/heroku
+  - hub
+  - iperf
+  - jq
+  - libevent
+  - libyaml
+  - lolcat
+  - markdown
+  - maven
+  - mcrypt
+  - mosh
+  - ncdu
+  - nmap
+  - node
+  - nvm
+  - openssl
+  - pv
+  - pwgen
+  - python
+  - pyenv
+  - rbenv
+  - readline
+  - ruby-build
+  - shellcheck
+  - shfmt
+  - sqlite
+  - ssh-copy-id
+  - terraform-docs
+  - terminal-notifier
+  - tree
+  - tflint
+  - tfswitch
+  - tmux
+  - uncrustify
+  - watchman
+  - wget
+  - wrk
+  - yq
+  - zsh
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+  - homebrew/services
+  - warrensbox/tap
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - adoptopenjdk
+  - chromedriver
+  - docker
+  #- dropbox
+  - firefox
+  #- google-chrome
+  - google-cloud-sdk
+  - gpg-suite
+  - handbrake
+  - iterm2
+  - macvim
+  - minikube
+  - puppetlabs/puppet/pdk
+  - sequel-pro
+  - skitch
+  - slack
+  - sourcetree
+  - transmit
+  - vagrant
+  - virtualbox
+  - virtualbox-extension-pack
+  - visual-studio-code
+  - vlc
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_apps: []
+  #- magnet
+  #- daisydisk
+  #- istatistica
+  #- droplr
+mas_email: vault_mas_email
+mas_password: vault_mas_password
+
+osx_script: "~/.osx --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: []
+  # - name: drush
+  #   state: present # present/absent, default: present
+  #   version: "^8.1" # default: N/A
+gem_packages: []
+  # - name: bundler
+  #   state: present # present/absent/latest, default: present
+  #   version: "~> 1.15.1" # default: N/A
+npm_packages: []
+  # - name: webpack
+  #   state: present # present/absent/latest, default: present
+  #   version: "^2.6" # default: N/A
+pip_packages: []
+  # - name: awscli
+  #   state: latest
+  # - name: pylama
+  #   state: latest
+  # - name: pylint
+  #   state: latest
+  # - name: pydocstyle
+  #   state: latest
+  # - name: autopep8
+  #   state: latest
+  # - name: boto
+  #   state: latest
+  # - name: saws
+  #   state: latest
+  # - name: sys
+  #   state: latest
+  # - name: requests
+  #   state: latest
+  # - name: beautysh
+  #   state: latest
+  # - name: mkdocs
+  #   state: present # present/absent/latest, default: present
+  #   version: "0.16.3" # default: N/A
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
