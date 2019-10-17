@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# bash <(curl -s https://raw.githubusercontent.com/billmoritz/mac-dev-playbook/master/install.sh)
+
 if [ ! -x "$(command -v pip)" ]; then
     sudo easy_install pip
 fi
