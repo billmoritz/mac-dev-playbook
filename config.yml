@@ -5,6 +5,7 @@ configure_dotfiles: yes
 configure_sudoers: no
 configure_terminal: no
 configure_osx: yes
+configure_sdkman: yes
 
 dotfiles_repo: https://github.com/billmoritz/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
@@ -166,6 +167,10 @@ pip_packages: []
   # - name: mkdocs
   #   state: present # present/absent/latest, default: present
   #   version: "0.16.3" # default: N/A
+
+sdkman_update: true
+sdkman_install_packages:
+  - { candidate: java, version: 8.0.202-zulu }
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []

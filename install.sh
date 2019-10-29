@@ -15,7 +15,11 @@ if [ ! -x "$(command -v cc)" ]; then
 fi
 
 if [ ! -d "$HOME/mac-dev-playbook/.git" ]; then
-  git clone https://github.com/billmoritz/mac-dev-playbook.git "$HOME/mac-dev-playbook" || exit
+    git clone https://github.com/billmoritz/mac-dev-playbook.git "$HOME/mac-dev-playbook" || exit
+fi
+
+if [ -e ~/.netrc ]; then
+    chmod 600 ~/.netrc
 fi
 
 cd "$HOME/mac-dev-playbook" || exit
