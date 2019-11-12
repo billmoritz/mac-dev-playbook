@@ -102,6 +102,7 @@ homebrew_cask_apps:
   - gpg-suite
   - handbrake
   - iterm2
+  - keepassxc
   - macvim
   - minikube
   - puppetlabs/puppet/pdk
