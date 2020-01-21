@@ -31,6 +31,7 @@ homebrew_installed_packages:
   - certbot
   - coreutils
   - cowsay
+  - curl
   - doxygen
   - dialog
   - direnv
@@ -57,6 +58,7 @@ homebrew_installed_packages:
   - nmap
   - node
   - nvm
+  - openapi-generator
   - openssl
   - pre-commit
   - pv
@@ -73,6 +75,7 @@ homebrew_installed_packages:
   - terraform-docs
   - terminal-notifier
   - tree
+  - tfenv
   - tflint
   - tfswitch
   - tmux
@@ -104,6 +107,7 @@ homebrew_cask_apps:
   - iterm2
   - keepassxc
   - macvim
+  - meld
   - minikube
   - puppetlabs/puppet/pdk
   - sequel-pro
