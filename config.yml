@@ -38,6 +38,7 @@ homebrew_installed_packages:
   - fortune
   - gettext
   - git
+  - git-extras
   - git-flow-avh
   - go
   - gpg
@@ -106,6 +107,7 @@ homebrew_cask_apps:
   - handbrake
   - iterm2
   - keepassxc
+  - keepingyouawake
   - macvim
   - meld
   - minikube
