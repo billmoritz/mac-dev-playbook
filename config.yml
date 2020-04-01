@@ -23,6 +23,8 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - ansible
+  - ansible-lint
   - antigen
   - aspell
   - autoconf
@@ -112,6 +114,9 @@ homebrew_cask_apps:
   - macvim
   - meld
   - minikube
+  - pdk
+  - pgadmin4
+  - psequel
   - puppetlabs/puppet/pdk
   - sequel-pro
   - skitch
